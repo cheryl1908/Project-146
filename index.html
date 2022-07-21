@@ -1,19 +1,12 @@
 <html>
   <head>
-    <title>Animating Shapes</title>
-
-    <!--  --------- IMPORTED LIBRARIES  ------>
+    <title>Animated Robot</title>
 
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
   </head>
 
   <body>
     <a-scene>
-      <!-- Creating scene -->
-
-      <!--  --------- SKY  --------- -->
-
-      <a-sky color="#EBEBEB"></a-sky>
 
       <!--  --------- GROUND  --------- -->
 
@@ -259,11 +252,11 @@
         material="color:#ef5350"
       ></a-entity>
 
-      <!--  --------- CAMERA --------- -->
-
-      <a-camera look-controls-enabled wasd-controls-enabled position="0 5 15"></a-camera>
+      <!--Camera-->
+       <a-entity position="0 0 15">
+                <a-camera></a-camera>
+            </a-entity>
       
     </a-scene>
-    <!-- Closing scene -->
   </body>
 </html>
